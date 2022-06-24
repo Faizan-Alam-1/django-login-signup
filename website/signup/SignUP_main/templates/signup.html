@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/signup.css' %}">
+</head>
+<body>
+<div class="container">
+    <h1>Sign Up</h1>
+    <form action="#">
+        <label for="fname">Email:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Password:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="lname">Repeat password:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Sign up"><br>  
+        <label for="fname">Have an account?</label>
+        <a href="{% url 'login' %}">&nbsp;<span>Login in</span></a>
+      </form>
+</div>
+</body>
+</html>

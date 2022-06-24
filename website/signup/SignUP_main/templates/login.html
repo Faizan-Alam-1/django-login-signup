@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login In</title>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/login.css' %}">
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form action="#">
+        <label for="fname">User name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Password:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Login"><br>  
+        <label for="fname">Don't have an account?</label>
+        <a href="{% url 'signup' %}">&nbsp;<span>Sign Up</span></a>
+      </form>
+</div>
+    
+</body>
+
+
+</html>
